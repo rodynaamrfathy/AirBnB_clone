@@ -18,11 +18,23 @@ class BaseModel:
         to_dict: Returns a dictionary representation of the instance.
 
     """
-    def __init__(self):
-        """Initialize a new BaseModel instance."""
+    def __init__(self, *args, **kwargs):
+        """Initialize a new BaseModel instance.
+
+            Args:
+            *args (any): Unused.
+            **kwargs (dict): Key/value pairs of attributes.
+        """
+        tform = "%Y-%m-%dT%H:%M:%S.%f"
         self.id = str(uuid.uuid4())
-        self.created_at = datetime.now()
-        self.updated_at = datetime.now()
+        self.created_at = datetime.today()
+        self.updated_at = datetime.today()
+        if len(kwargs) != 0:
+            for k, v in kwargs.items():
+                if k == "created_at" or k == "updated_at":
+                    self.__dict__[k] = datetime.strptime(v, tform)
+                else:
+                    self.__dict__[k] = v
 
     def __str__(self):
         """Return a string representation of the BaseModel instance."""
@@ -30,7 +42,7 @@ class BaseModel:
     
     def save(self):
         """Update the updated_at attribute with the current datetime."""
-        self.updated_at = datetime.now()
+        self.updated_at = datetime.today()
 
     def to_dict(self):
         """Return a dictionary representation of the BaseModel instance."""
