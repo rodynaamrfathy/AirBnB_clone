@@ -21,7 +21,7 @@ class FileStorage:
 
     def all(self):
         """Returns the dictionary __objects."""
-        return self.__objects
+        return FileStorage.__objects
 
     def new(self, obj):
          """Sets in __objects the obj with key <obj class name>.id."""
@@ -33,7 +33,7 @@ class FileStorage:
         for obj in FileStorage.__objects.values():
             obj_dic = obj.to_dict()
             with open(FileStorage.__file_path, 'w') as json_file:
-                json.dumps(obj_dic, json_file)
+                json.dump(obj_dic, json_file)
 
 
     def reload(self):
@@ -41,7 +41,7 @@ class FileStorage:
         try:
             with open(FileStorage.__file_path) as json_file:
                 objects_dict = json.load(json_file)
-                for obj in objects_dict:
+                for obj in objects_dict.values():
                     class_name = obj["__class__"]
                     del obj["__class__"]
                     self.new(eval(class_name) (**obj))
