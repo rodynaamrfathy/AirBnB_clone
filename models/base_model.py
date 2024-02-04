@@ -2,6 +2,8 @@
 """ base model defines all common attributes/methods for other classes. """
 import uuid
 from datetime import datetime
+import models
+
 
 class BaseModel:
     """BaseModel class for defining common attributes and methods.
@@ -35,6 +37,8 @@ class BaseModel:
                     self.__dict__[k] = datetime.strptime(v, tform)
                 else:
                     self.__dict__[k] = v
+        else:
+            models.storage.new()
 
     def __str__(self):
         """Return a string representation of the BaseModel instance."""
@@ -43,6 +47,7 @@ class BaseModel:
     def save(self):
         """Update the updated_at attribute with the current datetime."""
         self.updated_at = datetime.today()
+        models.storage.save()
 
     def to_dict(self):
         """Return a dictionary representation of the BaseModel instance."""
