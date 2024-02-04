@@ -252,11 +252,13 @@ e952b772-80a5-41e9-b728-6bc4dc5c21b4
 > *Updates an instance based on the class name, id, and kwargs passed.*
 > *Update the file.json*
 ## Authors
-```
+
 <details>
     <summary>TEAM:</summary>
     <ul>
-    <li><a href="https://www.github.com/rodynaamrfathy">Github</a></li>
-    <li><a href="mailto:rodynaamr@icloud.com">e-mail</a></li>
-    <li><a href="https://www.github.com/mohamedessamx">Github</a></li>
+        <li><a href="https://www.github.com/rodynaamrfathy">Github</a></li>
+        <li><a href="mailto:rodynaamr@icloud.com">e-mail</a></li>
+        <li><a href="https://www.github.com/mohamedessamx">Github</a></li>
+    </ul>
 </details>
+
