@@ -1,0 +1,16 @@
+.body_style{
+    margin: 0;
+    padding: 0;
+    color: #484848;
+    font-size: 14px;
+    font-family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    min-height: 3000px;
+    min-height: 100vh;
+}
+.container{
+    margin: auto;
+    max-width: 90%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
