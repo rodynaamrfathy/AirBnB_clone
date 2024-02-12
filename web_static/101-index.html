@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AirBnB-clone</title>
+    <link rel="icon" href="images/icon.png">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/filters.css">
+    <link rel="stylesheet" href="styles/places.css">
+</head>
+<body class="body_style">
+            <header class="header_style">
+                <div class="logo"></div>
+            </header>
+            <div class="container">
+                <section class="filters">
+                    <div class="subfilters">
+                        <div  class="locations">
+                            <h3>States</h3>
+                            <h4>California, Arizona...</h4>
+                            <ul id="statesList" class="popover">
+                                <li><h2>Arizona:</h2></li>
+                                <ul>
+                                    <li>Tuscon</li>
+                                    <li>Sedona</li>
+                                </ul>
+                                <li><h2>California:</h2></li>
+                                <ul>
+                                    <li>Sant Jose</li>
+                                    <li>San Francisco</li>
+                                    <li>Los Anglos</li>
+                                    <li>San Diego</li>
+                                </ul>
+                            </ul>
+                        </div>
+                        <div class="amenities">
+                            <h3>Amenities</h3>
+                            <h4>Internet, Kitchen...</h4>
+                            <ul id="amenitiesList" class="popover">
+                                <li>Internet</li>
+                                <li>TV</li>
+                                <li>Iron</li>
+                                <li>Kitchen</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button class="button">Search</button>
+                </section>
+                <!-- This is the main  content of the page -->
+                <section class="places">
+                    <h1>Places</h1>
+                    <div class="places_article">
+                        <article>
+                            <div  class="title">
+                                <div class="text">
+                                    <h2>My home</h2>
+                                </div>
+                                <div class="price_by_night">
+                                    <h1 class="price">
+                                        $80
+                                    </h1>
+                                </div>
+                            </div>
+                            <div class="information">
+                                <div class="max_guest">
+                                    <div class="image"></div>
+                                    <h2>2 Guests</h2>
+                                </div>
+                                <div class="number_rooms">
+                                    <div class="image"></div>
+                                    <h2>1 Bedroom</h2>
+                                </div>
+                                <div class="number_bathrooms">
+                                    <div class="image"></div>
+                                    <h2>1 Bathroom</h2>
+                                </div>
+                            </div>
+                            <div class="User-Description">
+                                <div class="user">
+                                    <h><strong>Owner: </strong> Rodyna Amr</h>
+                                </div>
+                                <div class="description">
+                                    <p>
+                                        This is a lovely 1 bedroom and 1 bathroom apartment that can accomodate 2 people. It locates at the center of Shanghai and next to subway line 1. 1 stop to People Square, 2 stops to Bund, 3 stops to Jingan Temple.
+                                    </p>
+                            </div>
+                            <div class="amenities_article">
+                                <h2>Amenities</h2>
+                                <div class="amenities_details">
+                                    <ul>
+                                        <li>
+                                          <div class="places_amenities_pet_friendly"></div>
+                                          Pet friendly
+                                      </li>
+                                        <li>
+                                          <div class="places_amenities_tv"></div>
+                                          Tv
+                                      </li>
+                                        <li>
+                                          <div class="places_amenities_wifi"></div>
+                                          Wifi
+                                      </li>
+                                      </ul>
+                                </div>
+                            </div>
+                            <div class="reviews">
+                                <h2>Reviews</h2>
+                                <div class="reviews_details">
+                                    <ul>
+                                        <li>
+                                            <h3 class="reviews_title">From Alice Johnson on the 15th September 2022</h3>
+                                            <p class="reviews_p">Absolutely fantastic stay! The host was incredibly accommodating, and the location was perfect for exploring the city. The apartment was clean and cozy, making our experience truly enjoyable. I can't wait to come back and stay here again!</p>
+                                        </li>
+                                        <li>
+                                            <h3 class="reviews_title">From John Smith on the 5th November 2022</h3>
+                                            <p class="reviews_p">My stay at this Airbnb was amazing. The owner went above and beyond to make me feel comfortable and provided excellent recommendations for local attractions. The place was spotless, and the attention to detail was impressive. Highly recommended! I will definitely choose this Airbnb for my future visits.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>                            
+                        </article>
+                        <article>
+                            <div  class="title">
+                                <div class="text">
+                                    <h2>
+                                        Tiny house
+                                    </h2>
+                                </div>
+                                <div class="price_by_night">
+                                    <h1 class="price">
+                                        $65
+                                    </h1>
+                                </div>
+                            </div>
+                            <div class="information">
+                                <div class="max_guest">
+                                    <div class="image"></div>
+                                    <h2>4 Guests</h2>
+                                </div>
+                                <div class="number_rooms">
+                                    <div class="image"></div>
+                                    <h2>2 Bedroom</h2>
+                                </div>
+                                <div class="number_bathrooms">
+                                    <div class="image"></div>
+                                    <h2>1 Bathroom</h2>
+                                </div>
+                            </div>
+                            <div class="User-Description">
+                                <div class="user">
+                                    <h><strong>Owner: </strong> Rodyna Amr</h>
+                                </div>
+                                <div class="description">
+                                    <p>
+                                        Our place is a private, affordable stand-alone guts house centrally located just minutes to French Quarters, downtown, the Fair Grounds (Jazz Fest) and City Park. The guest house is a quaint, 400 square ft. with a full bath, mini kitchen, & living room. The extra high ceilings make the home feel more spacious. The sofa converts to a bed also. We have a hand made counter area that adds character to the room and a great porch/deck to relax on and have a glass of Merlot.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="amenities_article">
+                                <h2>Amenities</h2>
+                                <div class="amenities_details">
+                                    <ul>
+                                        <li>
+                                          <div class="places_amenities_tv"></div>
+                                          Tv
+                                      </li>
+                                        <li>
+                                          <div class="places_amenities_wifi"></div>
+                                          Wifi
+                                      </li>
+                                      </ul>
+                                </div>
+                            </div>
+                            <div class="reviews">
+                                <h2>Reviews</h2>
+                                <div class="reviews_details">
+                                    <ul>
+                                        <li>
+                                            <h3 class="reviews_title">From Alice Johnson on the 15th September 2022</h3>
+                                            <p class="reviews_p">Absolutely fantastic stay! The host was incredibly accommodating, and the location was perfect for exploring the city. The apartment was clean and cozy, making our experience truly enjoyable.</p>
+                                        </li>
+                                        <li>
+                                            <h3 class="reviews_title">From John Smith on the 5th November 2022</h3>
+                                            <p class="reviews_p">My stay at this Airbnb was amazing. The owner went above and beyond to make me feel comfortable and provided excellent recommendations for local attractions. The place was spotless, and the attention to detail was impressive. Highly recommended!</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>                            
+                        </article>
+                        <article>
+                            <div  class="title">
+                                <div class="text">
+                                    <h2>
+                                        A suit
+                                    </h2>
+                                </div>
+                                <div class="price_by_night">
+                                    <h1 class="price">
+                                        $190
+                                    </h1>
+                                </div>
+                            </div>
+                            <div class="information">
+                                <div class="max_guest">
+                                    <div class="image"></div>
+                                    <h2>1 Guests</h2>
+                                </div>
+                                <div class="number_rooms">
+                                    <div class="image"></div>
+                                    <h2>1 Bedroom</h2>
+                                </div>
+                                <div class="number_bathrooms">
+                                    <div class="image"></div>
+                                    <h2>1 Bathroom</h2>
+                                </div>
+                            </div>
+                            <div class="User-Description">
+                                <div class="user">
+                                    <h><strong>Owner: </strong> Rodyna Amr</h>
+                                </div>
+                                <div class="description">
+                                    <p>
+                                        Our place is a private, affordable stand-alone guts house centrally located just minutes to French Quarters, downtown, the Fair Grounds (Jazz Fest) and City Park. The guest house is a quaint, 400 square ft. with a full bath, mini kitchen, & living room. The extra high ceilings make the home feel more spacious. The sofa converts to a bed also. We have a hand made counter area that adds character to the room and a great porch/deck to relax on and have a glass of Merlot.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="amenities_article">
+                                <h2>Amenities</h2>
+                                <div class="amenities_details">
+                                    <ul>
+                                        <li>
+                                            <div class="places_amenities_pet_friendly"></div>
+                                            Pet friendly
+                                        </li>
+                                        <li>
+                                          <div class="places_amenities_tv"></div>
+                                          Tv
+                                      </li>
+                                        <li>
+                                          <div class="places_amenities_wifi"></div>
+                                          Wifi
+                                      </li>
+                                      <li>
+                                        <div class="places_amenities_Kitchen"></div>
+                                        Kitchen
+                                    </li>
+                                      </ul>
+                                </div>
+                            </div>
+                            <div class="reviews">
+                                <h2>Reviews</h2>
+                                <div class="reviews_details">
+                                    <ul>
+                                        <li>
+                                            <h3 class="reviews_title">From Bob Dylan the 27th January 2017</h3>
+                                            <p class="reviews_p">i loved it. The owner is very welcoming and helpful.</p>
+                                        </li>
+                                        <li>
+                                            <h3 class="reviews_title">From Alex the 20th May 2020</h3>
+                                            <p class="reviews_p">i enjoyed my stay so much tottaly recommend.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="title">
+                                <div class="text">
+                                    <h2>Lakeside Cabin</h2>
+                                </div>
+                                <div class="price_by_night">
+                                    <h1 class="price">$120</h1>
+                                </div>
+                            </div>
+                            <div class="information">
+                                <div class="max_guest">
+                                    <div class="image"></div>
+                                    <h2>2 Guests</h2>
+                                </div>
+                                <div class="number_rooms">
+                                    <div class="image"></div>
+                                    <h2>1 Bedroom</h2>
+                                </div>
+                                <div class="number_bathrooms">
+                                    <div class="image"></div>
+                                    <h2>1 Bathroom</h2>
+                                </div>
+                            </div>
+                            <div class="User-Description">
+                                <div class="user">
+                                    <h><strong>Owner: </strong> Alex Reynolds</h>
+                                </div>
+                                <div class="description">
+                                    <p>
+                                        Unwind in our charming lakeside cabin. Perfect for a romantic getaway, this cozy retreat offers a serene escape with stunning lake views. Enjoy a private deck, fully equipped kitchen, and a comfortable bedroom. Immerse yourself in nature while being just a short drive from local attractions.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="amenities_article">
+                                <h2>Amenities</h2>
+                                <div class="amenities_details">
+                                    <ul>
+                                        <li>
+                                            <div class="places_amenities_pet_friendly"></div>
+                                            Pet friendly
+                                        </li>
+                                        <li>
+                                            <div class="places_amenities_fireplace"></div>
+                                            Fireplace
+                                        </li>
+                                        <li>
+                                            <div class="places_amenities_wifi"></div>
+                                            Wifi
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="reviews">
+                                <h2>Reviews</h2>
+                                <div class="reviews_details">
+                                    <ul>
+                                        <li>
+                                            <h3 class="reviews_title">From Sarah Miller on the 5th August 2023</h3>
+                                            <p class="reviews_p">Absolutely magical! The cabin was clean, cozy, and the lake views were breathtaking. Alex is a fantastic host, and we can't wait to return for another relaxing stay.</p>
+                                        </li>
+                                        <li>
+                                            <h3 class="reviews_title">From James Taylor on the 12th September 2023</h3>
+                                            <p class="reviews_p">A hidden gem! This cabin exceeded our expectations. The attention to detail and the peaceful surroundings made our weekend unforgettable. Highly recommended!</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="title">
+                                <div class="text">
+                                    <h2>Cityscape Loft</h2>
+                                </div>
+                                <div class="price_by_night">
+                                    <h1 class="price">$95</h1>
+                                </div>
+                            </div>
+                            <div class="information">
+                                <div class="max_guest">
+                                    <div class="image"></div>
+                                    <h2>3 Guests</h2>
+                                </div>
+                                <div class="number_rooms">
+                                    <div class="image"></div>
+                                    <h2>3 Bedroom</h2>
+                                </div>
+                                <div class="number_bathrooms">
+                                    <div class="image"></div>
+                                    <h2>1 Bathrooms</h2>
+                                </div>
+                            </div>
+                            <div class="User-Description">
+                                <div class="user">
+                                    <h><strong>Owner: </strong> Mia Rodriguez</h>
+                                </div>
+                                <div class="description">
+                                    <p>
+                                        Experience urban living at its finest in our stylish city loft. Located in the heart of downtown, this modern space features high ceilings, large windows, and contemporary decor. Enjoy the convenience of nearby restaurants, shops, and cultural attractions. Ideal for a city getaway or business travelers looking for a chic retreat.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="amenities_article">
+                                <h2>Amenities</h2>
+                                <div class="amenities_details">
+                                    <ul>
+                                        <li>
+                                            <div class="places_amenities_tv"></div>
+                                            TV
+                                        </li>
+                                        <li>
+                                            <div class="places_amenities_wifi"></div>
+                                            Wifi
+                                        </li>
+                                        <li>
+                                            <div class="places_amenities_gym"></div>
+                                            Gym access
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="reviews">
+                                <h2>Reviews</h2>
+                                <div class="reviews_details">
+                                    <ul>
+                                        <li>
+                                            <h3 class="reviews_title">From David Turner on the 8th October 2023</h3>
+                                            <p class="reviews_p">Mia's loft is a hidden gem in the city. The design is sleek, and the location is unbeatable. We had a fantastic stay and would highly recommend it to anyone looking for a modern city experience.</p>
+                                        </li>
+                                        <li>
+                                            <h3 class="reviews_title">From Olivia Martinez on the 20th November 2023</h3>
+                                            <p class="reviews_p">A fantastic urban retreat! Mia is a gracious host, and her loft is both stylish and comfortable. The added gym access was a great bonus. Will definitely stay here again!</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>           
+                    </div>
+                </section>
+            </div>
+            <footer class="footer_style">
+                welcome to my airbnb clone
+            </footer>
+</body>
+</html> 
